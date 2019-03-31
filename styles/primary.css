@@ -1,3 +1,16 @@
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.booksy {
+    background-color: #212121;
+    margin: 2vh;
+    padding: 1vh;
+    border-radius: .35vh
 }
