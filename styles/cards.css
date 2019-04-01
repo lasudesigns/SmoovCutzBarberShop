@@ -1,0 +1,27 @@
+.barbercard {
+    width: 100%;
+    height: 27.5vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    margin-left: -1vh;
+    padding: 1vh;
+    background-color: #d34;
+}
+
+.barberprof {
+    overflow: hidden;
+    width: 45%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+.barbimg {
+    height: inherit;
+    width: auto;
+    margin-left: -40vw;
+}
+
+@media only screen and (min-width: 800px)
