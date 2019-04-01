@@ -14,20 +14,30 @@ body {
     flex-flow: column;
     align-content: center;
     align-items: center;
+    height: 200vh;
+}
+
+#main {
+    margin-top: 8vh;
 }
 
 #navigation {
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 2vh;
     width: 100vw;
     background-color: #232323;
+    position: fixed;
+    float: top;
+}
+
+#logo {
+    overflow: hidden;
 }
 
 .booksy {
     background-color: #212121;
-    margin: 2vh;
-    padding: 1vh;
+    margin: 20vh;
     border-radius: .35vh
 }
