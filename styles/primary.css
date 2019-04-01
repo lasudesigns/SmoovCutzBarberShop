@@ -9,19 +9,13 @@ a {
     color: white;
 }
 
-body {
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    align-items: center;
-    height: 200vh;
-}
-
-#main {
-    margin-top: 8vh;
+#logo {
+    overflow: hidden;
 }
 
 #navigation {
+    margin-top: 94vh;
+    z-index: 100;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -29,15 +23,60 @@ body {
     width: 100vw;
     background-color: #232323;
     position: fixed;
-    float: top;
+    float: bottom;
 }
 
-#logo {
-    overflow: hidden;
+#headimg {
+    height: 30vh;
+    width: 100vw;
+    background: url(https://i1.ypcdn.com/blob/53541f269519ca259dad647c36ffcc3b0e5d626b);
+    background-size: 150%;
+    background-position: 50% -10%
+}
+
+#main {
+    background-color: orange;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    height: 200vh;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3.5vh;
 }
 
 .booksy {
+    align-self: center;
     background-color: #212121;
-    margin: 20vh;
-    border-radius: .35vh
+    border-radius: .35vh;
+    padding: 1vh;
+    width: 30%;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+footer {
+    background: white;
+}
+
+@media only screen and (min-width: 800px) {
+    #navigation {
+        margin-top: 0;
+    }
+
+    #headimg {
+        margin-top: 5vh;
+        height: 40vh;
+        background-position: 0% 10%;
+    }
+
+    #main {
+        margin-bottom: 0;
+    }
 }
