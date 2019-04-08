@@ -1,27 +1,87 @@
 .barbercard {
-    width: 100%;
-    height: 27.5vh;
+    width: 80vw;
+    height: 65vh;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     margin-bottom: 3vh;
-    margin-top: 3vh;
-    margin-left: -1vh;
-    padding: 1vh;
-    background-color: #d34;
+    background-color: #ffe;
+    align-self: center;
 }
 
 .barberprof {
     overflow: hidden;
-    width: 45%;
-    height: 100%;
+    width: 100%;
+    height: 35%;
     background-color: lightblue;
 }
 
 .barbimg {
-    height: inherit;
+    height: 110%;
     width: auto;
-    margin-left: -40vw;
+    margin-left: -15vw;
 }
 
-@media only screen and (min-width: 800px)
+.booksy {
+    width: 100%;
+    height: 5.1%;
+    border-radius: 0;
+    background-color: #5555ff;
+    margin-bottom: -.1%;
+    padding-top: 2%
+}
+
+.namecard {
+    background-color: #353535;
+    margin-top: -20%;
+    font-size: 3%;
+    width: 40%;
+    padding: 1%;
+    color: white;
+    opacity: .8;
+    display: flex;
+}
+
+.namecard p {
+    margin-left: 1ch;
+}
+
+.services {
+    height: 40%;
+    width: 95%;
+    text-align: left;
+    color: black;
+    margin-left: 1ch;
+}
+
+.location {
+    width: 95%;
+    height: 12%;
+    text-align: left;
+    margin-left: 1ch;
+    color: black;
+}
+
+.location p {
+    color: black;
+}
+
+@media only screen and (min-width: 800px) {
+    .barbercard {
+        width: 30%;
+    }
+    
+    #gallery {
+        justify-content: space-around;
+    }
+
+    .barbimg {
+        height: 110%;
+        width: auto;
+        margin-left: -15%;
+    }
+
+    .barberprof {
+        width: 100%;
+    }
+}
