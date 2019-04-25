@@ -10,7 +10,6 @@ a {
 }
 
 p {
-    align-self: center;
     text-align: left;
     color: white;
 }
@@ -41,6 +40,7 @@ h1 {
     background-color: #ffc;
     position: fixed;
     float: bottom;
+    margin-bottom: 10vh;
 }
 
 #headimg {
@@ -51,7 +51,7 @@ h1 {
     background-position: 50% -10%
 }
 
-#main {
+.main {
     position: relative;
     display: flex;
     flex-flow: column nowrap;
@@ -90,14 +90,15 @@ br {
 
 #gallery  {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     align-content: space-around;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
 
     #navigation {
         margin-top: 0;
+        margin-bottom: 0;
     }
 
     #headimg {
@@ -106,9 +107,13 @@ br {
         background-position: 0% 10%;
     }
 
-    #main {
+    .main {
         margin-bottom: 0;
         width: 66%;
+    }
+
+    #gallery {
+        flex-flow: row wrap;
     }
 
 }

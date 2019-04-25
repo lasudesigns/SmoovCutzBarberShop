@@ -1,6 +1,17 @@
-.barbercard {
+.infocard {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.infopic {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.card {
     width: 80vw;
-    height: 65vh;
+    height: 120vw;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -13,12 +24,11 @@
     overflow: hidden;
     width: 100%;
     height: 35%;
-    background-color: lightblue;
 }
 
 .barbimg {
-    height: 110%;
-    width: auto;
+    height: auto;
+    width: 120%;
     margin-left: -15vw;
 }
 
@@ -66,9 +76,35 @@
     color: black;
 }
 
-@media only screen and (min-width: 800px) {
-    .barbercard {
-        width: 30%;
+@media only screen and (min-width: 1020px) {
+    .card {
+        width: 48%;
+        height: 42vh;
+    }
+    
+    .barbimg {
+        height: auto;
+        width: 120%;
+        margin-left: -15%;
+    }
+
+    #gallery {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .infopic {
+        width: 45%;
+    }
+
+    .infocard p {
+        width: 45%;
+    }
+
+    .card {
+        width: 32%;
+        height: 32vw;
     }
     
     #gallery {
@@ -76,8 +112,8 @@
     }
 
     .barbimg {
-        height: 110%;
-        width: auto;
+        height: auto;
+        width: 120%;
         margin-left: -15%;
     }
 
